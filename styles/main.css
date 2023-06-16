@@ -1,0 +1,10 @@
+html {
+  font-family: 'Comforter', cursive;
+  font-size: 40px;
+  text-align: center;
+  background-image: url(https://images.cdn1.stockunlimited.net/preview1300/galaxy-background-design_2001751.jpg);
+}
+h1,
+p {
+  color: white;
+}
