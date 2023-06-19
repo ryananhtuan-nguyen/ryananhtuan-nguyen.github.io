@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link href="../styles/main.css" rel="stylesheet" type="text/css" />
+    <title>Differences between Margin, Border and Padding</title>
+  </head>
+
+  <body>
+    <div>
+      <h1>
+        Margin, border and padding are essential elements of spacing when it comes to
+        web design
+      </h1>
+    </div>
+
+    <div>
+      <h2 style="text-align: left;">1. Understand Box model in CSS</h2>
+        <img src="../styles/boxmodel.gif" alt="Box-model" />
+        <p class="text-blue">Look at this picture</p>
+        <p style="text-align:left;">
+          This is the model for most of HTML elements, such as heading, body, h1, h2, div, etc... 
+          <ol style="text-align:left;">The container, or box includes:
+            <li>Content: the innermost part of the box that could be images, texts, etc</li>
+            <li>Padding: the layer between content and border</li>
+            <li>Border: the perimeter of the box</li>
+            <li>Margin: the outter space surrounding the box</li>
+          </ol>
+        </p>
+    </div>
+
+    <div>
+      <h2 style="text-align:left;">2. The differences</h2>
+        <p style="text-align:left;">
+          In the model above, we can see the main difference between margin, border and padding: Border is the perimeter of the box we are working on( which coule be an images, text or paragraph, etc),
+          while Padding controls the space within the box, and Margin controls the space outside that box.
+          Padding can be set to 0px or above, to change the elements inside's size and how much background is visible within the box. 
+          <span>Margin can be set to 0px and above like padding but also can be set to auto and even have negative value.</span> 
+          <span>Border can have different styles such as dotted, dashed, solid, groove, etc</span>
+        </p>
+    </div>
+
+    <div>
+      <h2 style="text-align:left;">3. The similarities</h2>
+        <p style="text-align:left;">
+          Either Margin or Padding could be used with Border to achieve the same result.
+          <span>However, depends on the situations, you can pick one over the other to make sure your designs look good on all the devices</span> 
+      </p>
+    </div>
+    
+  </body>
+</html>
