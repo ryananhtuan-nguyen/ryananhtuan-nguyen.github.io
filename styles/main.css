@@ -5,7 +5,9 @@ html {
   background-image: url(https://images.cdn1.stockunlimited.net/preview1300/galaxy-background-design_2001751.jpg);
 }
 h1,
-p {
+p,
+h2,
+h3 {
   color: white;
 }
 .text-blue {
