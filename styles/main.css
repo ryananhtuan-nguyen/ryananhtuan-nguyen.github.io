@@ -14,6 +14,9 @@ ol {
 .text-blue {
   color: rgb(124, 245, 245);
 }
+.text-pink {
+  color: rgb(237, 158, 202);
+}
 .last-div {
   padding-bottom: 150px;
 }
