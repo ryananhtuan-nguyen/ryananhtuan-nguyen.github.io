@@ -2,7 +2,8 @@ html {
   font-family: 'Comforter', cursive;
   font-size: 40px;
   text-align: center;
-  background-image: url(https://images.cdn1.stockunlimited.net/preview1300/galaxy-background-design_2001751.jpg);
+  background-image: url('./545053.jpg');
+  background-size: 100%, 100%;
 }
 h1,
 p,
@@ -45,4 +46,7 @@ a {
 }
 a:hover {
   background-size: 0 3px, 100% 3px;
+}
+.text-yellow {
+  color: rgb(228, 245, 3);
 }
