@@ -1,6 +1,6 @@
 html {
   font-family: 'Comforter', cursive;
-  font-size: x-large;
+  font-size: larger;
   text-align: center;
   background-color: #f876de;
   background-image: linear-gradient(-80deg, #f876de 0%, #b9d1eb 74%);
@@ -12,7 +12,19 @@ img {
   height: 8em;
   width: 10em;
 }
-@media (min-width: 1024px) {
+#flex-box {
+  height: 10em;
+  width: 20em;
+  display: inline;
+  justify-content: center;
+}
+#box-left,
+#box-mid,
+#box-right {
+  display: flex;
+}
+
+@media (min-width: 768px) {
   html {
     font-size: xx-large;
   }
