@@ -1,16 +1,21 @@
 html {
   font-family: 'Comforter', cursive;
-  font-size: 40px;
+  font-size: x-large;
   text-align: center;
-  background-image: url('./545053.jpg');
-  background-size: 100%, 100%;
+  background-color: #f876de;
+  background-image: linear-gradient(-80deg, #f876de 0%, #b9d1eb 74%);
 }
-h1,
-p,
-h2,
-h3,
-ol {
-  color: white;
+body {
+  width: 80vh, 80vw;
+}
+img {
+  height: 8em;
+  width: 10em;
+}
+@media (min-width: 1024px) {
+  html {
+    font-size: xx-large;
+  }
 }
 .text-blue {
   color: rgb(124, 245, 245);
