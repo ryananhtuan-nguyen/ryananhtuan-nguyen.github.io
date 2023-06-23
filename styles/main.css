@@ -20,17 +20,13 @@ img {
 @media (max-width: 767px) {
   #flex-box {
     display: grid;
-    grid-template-rows: auto auto auto auto;
+    grid-template-rows: auto auto;
     flex-wrap: wrap;
   }
 }
 #box-left,
 #box-mid,
 #box-right {
-  align-self: flex-end;
-  padding: 1em;
-  margin: 1em;
-  display: flex;
 }
 
 @media (min-width: 768px) {
