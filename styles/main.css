@@ -12,13 +12,13 @@ img {
   height: 8em;
   width: 10em;
 }
-#flex-box {
+#box-container {
   display: grid;
   grid-template-columns: auto auto auto auto;
   grid-gap: 0.5em;
 }
 @media (max-width: 767px) {
-  #flex-box {
+  #box-container {
     display: grid;
     grid-template-rows: auto auto;
     flex-wrap: wrap;
