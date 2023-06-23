@@ -15,8 +15,11 @@ img {
 #flex-box {
   height: 10em;
   width: 20em;
-  flex-wrap: wrap;
-  display: flex;
+
+  display: grid;
+  grid-template-column: auto auto auto auto;
+  grid-gap: 2em;
+
 }
 #box-left,
 #box-mid,
