@@ -15,13 +15,18 @@ img {
 #flex-box {
   height: 10em;
   width: 20em;
+
   display: grid;
   grid-template-column: auto auto auto auto;
   grid-gap: 2em;
+
 }
 #box-left,
 #box-mid,
 #box-right {
+  align-self: flex-end;
+  padding: 1em;
+  margin: 1em;
   display: flex;
 }
 
