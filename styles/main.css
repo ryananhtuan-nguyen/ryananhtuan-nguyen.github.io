@@ -15,12 +15,15 @@ img {
 #flex-box {
   height: 10em;
   width: 20em;
-  display: inline;
-  justify-content: center;
+  flex-wrap: wrap;
+  display: flex;
 }
 #box-left,
 #box-mid,
 #box-right {
+  align-self: flex-end;
+  padding: 1em;
+  margin: 1em;
   display: flex;
 }
 
