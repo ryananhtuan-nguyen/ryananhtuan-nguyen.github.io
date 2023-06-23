@@ -17,6 +17,13 @@ img {
   grid-template-columns: auto auto auto auto;
   grid-gap: 0.5em;
 }
+@media (max-width: 767px) {
+  #flex-box {
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    flex-wrap: wrap;
+  }
+}
 #box-left,
 #box-mid,
 #box-right {
