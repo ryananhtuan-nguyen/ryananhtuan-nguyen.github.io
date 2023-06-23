@@ -13,13 +13,9 @@ img {
   width: 10em;
 }
 #flex-box {
-  height: 10em;
-  width: 20em;
-
   display: grid;
-  grid-template-column: auto auto auto auto;
-  grid-gap: 2em;
-
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 0.5em;
 }
 #box-left,
 #box-mid,
