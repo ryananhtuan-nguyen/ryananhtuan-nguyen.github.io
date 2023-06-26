@@ -2,8 +2,17 @@ html {
   font-family: 'Comforter', cursive;
   font-size: larger;
   text-align: center;
-  background-color: #f876de;
-  background-image: linear-gradient(-80deg, #f876de 0%, #b9d1eb 74%);
+  background: #108dc7; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ef8e38,
+    #108dc7
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ef8e38,
+    #108dc7
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 body {
   width: 80vh, 80vw;
@@ -23,10 +32,6 @@ img {
     grid-template-rows: auto auto;
     flex-wrap: wrap;
   }
-}
-#box-left,
-#box-mid,
-#box-right {
 }
 
 @media (min-width: 768px) {
@@ -71,4 +76,10 @@ a:hover {
 }
 .text-yellow {
   color: rgb(228, 245, 3);
+}
+.text-green {
+  color: rgb(61, 230, 112);
+}
+div {
+  padding: 2em;
 }
