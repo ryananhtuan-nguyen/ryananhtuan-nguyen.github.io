@@ -4,6 +4,7 @@ html {
   text-align: center;
   background-image: url('./tree.jpg');
   background-repeat: repeat;
+  background-size: cover;
 }
 body {
   width: 80vh, 80vw;
