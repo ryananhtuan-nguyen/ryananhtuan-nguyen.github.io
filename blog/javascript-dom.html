@@ -1,1 +1,292 @@
-console.log(hey)
+<!DOCTYPE html>
+<html
+  lang="en"
+  class="caveat-font"
+  style="
+    background: #108dc7;
+    background: -webkit-linear-gradient(to right, #ef8e38, #108dc7);
+    background: linear-gradient(to right, #ef8e38, #108dc7);
+  "
+>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../styles/main.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat&display=swap"
+      rel="stylesheet"
+    />
+    <title>JS Fundamental</title>
+  </head>
+
+  <body>
+    <h1>Javascript Fundamental</h1>
+    <div style="text-align: left">
+
+      <!-------------------------------PART 1------------------------------->
+      <h2 class="text-yellow">What you need to know about Javascript</h2>
+      <p>
+        If you are not in the tech world, you might have heard of the term
+        “programming language”.
+        <span class="text-green"
+          >So, what exactly is a programming language?</span
+        >
+      </p>
+      <p>
+        <cite class="text-blue"
+          >A programming language is a system of notation for writing computer
+          programs. Most programming languages are text-based formal languages,
+          but they may also be graphical. They are a kind of computer language.
+        </cite>
+        - Wikipedia
+      </p>
+      <p>
+        Javascript is one of the programming languages that allows you to
+        implement complex features on web pages. Unlike Java, an object-based
+        programming language that has the ability to run on a virtual machine
+        and therefore can be run on any devices, Javascript is an
+        object-oriented programming language that is more commonly used in web
+        applications like browsers. That said, Javascript needs an interpreter
+        to run and has to be embedded in the HTML of a web browser. It is a
+        complementary language, which means you also need to know and understand
+        HTML and CSS and how these work together with Javascript.
+      </p>
+      <p>
+        Think about a human, Javascript can be analogized as the brain, HTML as
+        the body and CSS as clothing. While HTML provides the foundation, and
+        content structure to a web page, CSS controls the styling and appearance
+        of how these elements in the HTML should look, Javascript makes the page
+        more alive and interactive by adding logics, interactivity and
+        functionality to it. And just as a brain, Javascript interacts with HTML
+        and CSS. It can change the HTML structure, or apply CSS styles
+        dynamically, create animations, forms, etc based on user’s input or
+        other events. The three layers build on top of one another nicely.
+        Together, they form a powerful trio that enables the creation of dynamic
+        and engaging web experiences.
+      </p>
+
+
+      <!---------------------------------PART 2------------------------------->
+      <h2 class="text-yellow">Now lets talk about control flow and loops.</h2>
+      <p>
+        The control flow is the order in which the computer executes statements
+        in a script. Code is run in order from the first line in the file to the
+        last line, unless the computer runs across the (extremely frequent)
+        structures that change the control flow, such as conditionals and loops.
+        A loop is a sequence of instructions that is repeated until a certain
+        condition is met.
+      </p>
+      <p>
+        Let say you have a fixed timetable which you follow everyday. This lists
+        all the tasks you do since you wake up until you go to bed. The control
+        flow is the order in which you do these tasks in your timetable. In
+        these tasks, there might be one that you will have to repeatedly do a
+        sequences of smaller tasks until a certain condition is met. For
+        example, when you cook dinner, you will need to cut vegetables, boil
+        them, and then cut meat, fry them, and then again cut your fruit for
+        dessert, etc until your meal is ready. This is an example of a loop.
+        Until your dinner is ready, your cooking is not finished. You will need
+        to repeat cutting, boiling (frying), plating, again and again.
+      </p>
+      <p>
+        Now lets look at an example of a for loop in action. Say you have an
+        array variable names[] with 10 people’s name, and you want to log these
+        onto the console. You could do it as below: 
+        <div class="row">
+          <div class="column">
+            <div class="card">
+                <div style='background-color:black; text-align:left;'>
+                  <p class="whiteC">
+                    <code class="text-white">
+                        console.log(names[0]);<br>
+                        console.log(names[1]);<br>
+                        ... <br>
+                        console.log(names[9]);<br>
+                    </code>
+                  </p>
+                </div>
+            </div>
+          </div>
+        </div>
+        This is where loops come in handy. Instead of logging them out one by one manually, you
+        could write this instead: 
+        <div class="row">
+          <div class="column">
+            <div class="card">
+                <div style='background-color:black; text-align:left;'>
+                  <p class="whiteC">
+                    <code class="text-white">
+        
+                      for(let i = 0; i < names.length; i++){<br>
+                        &nbsp;&nbsp;console.log(names[i]); <br>
+                      }
+                    </code>
+                  </p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </p>
+
+
+      <!------------------------------------------PART 3------------------------------------------------->
+      <h2 class="text-yellow">Next, lets talk about DOM.</h2>
+      <p>The Document Object Model, generally abbreviated to DOM, is the way through which JavaScript interacts with content within a website. 
+        Consider this HTML code:
+
+        <div class="row">
+          <div class="column">
+            <div class="card">
+                <div style='background-color:black; text-align:left;'>
+                  <p class="whiteC">
+                    <code class="text-white">
+        
+                  &lt;body&gt;<br>
+                  &nbsp;&nbsp;&lt;h1&gt; Javascript Café &lt;/h1&gt;<br>
+                  &nbsp;&nbsp;&lt;div class="container"&gt;<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;p id="whiteCoffee"&gt;&lt;/p&gt;<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Some more text here!&lt;/p&gt;<br>
+                  &nbsp;&nbsp;&lt;/div&gt;<br>
+                  &nbsp;&nbsp;&lt;script src="cafe.js"&gt;&lt;/script&gt;<br>
+                  &lt;/body&gt;<br>
+
+                    </code>
+                  </p>
+                </div>
+            </div>
+          </div>
+        </div>
+
+        To interact with the above HTML, inside the file <span class="text-green">cafe.js</span>, we can write Javascript code to manipulate the DOM. 
+        For example this line of code
+        <div class="row">
+          <div class="column" style="width:100%">
+            <div class="card">
+              <div style='background-color:black; text-align:left;'>
+                <p class='whiteC'>
+                  <code class="text-white">
+      
+                    document.getElementById('whiteCoffee').innerHTML = 'White Coffee: ' + products.whiteCoffee.stock
+      
+                  </code>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        will change the innerHTML (in this case just text) of whiteCoffe to “White Coffee: 5” (whiteCoffee.stock = 5).
+        We can also change the class of an element, add/remove, log something out onto the console, even define and perform function depends on user input with Javascript.
+      </p>
+
+
+      <!--------------------------------------------------PART 4---------------------------------------------------->
+      <p>In the previous example, we console.log the value of each elements in array names[]. So what exactly is an array? 
+        <p><span class="text-green">An array</span> is an ordered collection of values of any datatype, where each values 
+        is assigned a numeric index, start with 0 (e.g: first element is names[0] not names[1]. 
+      </p>
+      <p>
+        <span class="text-green">An object</span>, on the other hand, is an unordered collection of key-value pairs, where each value is associated with a unique key. 
+      </p>
+
+
+      <div class="row">
+
+        <div class="column">
+          <div class="card">
+            <h3>Array</h3>
+              <ul>
+                <li>Accessing elements: You can access array elements using their numeric index enclosed in square brackets ([]).</li>
+                <li>Iteration: Arrays are iterable, allowing you to loop through their elements using loops like for or array iteration methods like forEach, map, filter, etc.</li>
+              </ul>
+          </div>
+        </div>
+        
+        <div class="column">
+          <div class="card">
+            <h3>Object</h3>
+            <ul>
+              <li>
+                Accessing properties: You can access object properties using dot notation (objectName.propertyName) 
+                or square bracket notation (objectName['propertyName']). Dynamic property access: With objects, you can 
+                also access properties dynamically using a variable as the property name within square brackets.
+              </li>
+              <li>
+                Iteration: Objects are not directly iterable using traditional looping constructs like for or array 
+                iteration methods. However, you can iterate over an object's keys or values using Object.keys(objectName), 
+                Object.values(objectName), or Object.entries(objectName) and then apply a loop or iteration method to 
+                the resulting array.
+              </li>
+            </ul>
+          </div>
+        </div>
+    </div>
+
+    <!----------------------------------------PART 5------------------------------------------------------------->
+    <p>
+      We talked about how we could use Javascript to manipulate the DOM, including define and perform functions. 
+      <h2 class="text-yellow">So, what are functions?</h2> 
+      Functions are one of the fundamental building blocks in Javascript. 
+      A function is a block of reusable code that performs a specific task or calculate a value. 
+      For a procedure/set of statements to qualify as a function, it should take some input and return some output after 
+      performing the tasks defined inside the block. For example, the following code defines a function name plusTwo:
+    </p>
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <div style='background-color:black; text-align:left;'>
+            <p class='whiteC'>
+              <code class="text-white">
+  
+                function plusTwo(num1,num2){<br>
+                  &nbsp;&nbsp;return num1+num2;<br>
+                }<br>
+              
+  
+              </code>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p>
+      The function takes 2 parameters called num1 and num2, then return the specific value (num1+num2).
+      So, why are they so important? 
+      Well, functions can be helpful in many ways when it comes to programming, as they enable programmers 
+      to break down or decompose a problem into smaller chunks, each of which performs a particular task.
+      <ul>
+        <li>
+          <span class="text-green">Code reusability: </span>Instead of writing the same code repeatedly, you 
+          can encapsulate it in a function and call the function whenever needed. This promotes modularity, 
+          efficiency, and maintainability of your code.
+        </li>
+        <li>
+          <span class="text-green">Abstraction: </span>Once a function is created, the details of how it works can 
+          almost be forgotten about. In this way the detail is abstracted, allowing the programmer to focus on 
+          the bigger picture. By calling a function with specific inputs and receiving an output, you can work 
+          with the result without needing to know the intricate details of how the function accomplishes its task.
+        </li>
+        <li>
+          <span class ="text-green">Event Handling: </span>JavaScript functions are commonly used to handle events in 
+          web development. By associating a function with an event listener, you can specify the code to be executed 
+          when a particular event occurs, such as a button click, form submission, or keyboard interaction.
+        </li>
+        <li>
+          <span class="text-green">Readability: </span>a <span class="text-blue">clean</span> set of code goes a long way 
+          in making it easy to maintain and follow.
+        </li>
+      </ul>
+      And the list goes on. There are so many more reason on how functions are vital for programming. Overall, without 
+      functions, programs would have loads of duplicate code, wouldn't flow in a logical order, and would have no 
+      separation of utility. That would be a nightmare for managing, testing, and debugging. 
+    </p>
+
+    <div style="text-align: right">
+      <a href="../index.html" class="text-yellow">Go back to main page</a>
+    </div>
+
+
+  </body>
+</html>

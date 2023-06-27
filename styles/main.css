@@ -1,6 +1,7 @@
 html {
   font-family: 'Comforter', cursive;
   font-size: larger;
+  font-weight: bold;
   text-align: center;
   background-image: url('./forest.jpg');
   background-repeat: repeat;
@@ -72,6 +73,50 @@ a:hover {
 .text-green {
   color: rgb(61, 230, 112);
 }
+.text-white {
+  color: white;
+}
 div {
   padding: 2em;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 50%;
+  padding: 0.5%;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {
+  margin: 0 -5px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
 }
