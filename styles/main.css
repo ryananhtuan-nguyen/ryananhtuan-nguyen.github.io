@@ -10,6 +10,11 @@ html {
 body {
   width: 80vh, 80vw;
 }
+@media (max-width:767px){
+  body{
+  width:100vh, 100vw;
+  }
+}
 img {
   height: 8em;
   width: 10em;
@@ -83,7 +88,7 @@ div {
   box-sizing: border-box;
 }
 
-/* Float four columns side by side */
+/* Float 2 columns side by side */
 .column {
   float: left;
   width: 50%;
@@ -111,7 +116,7 @@ div {
   }
 }
 
-/* Style the counter cards */
+/* Style the cards */
 .card {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
