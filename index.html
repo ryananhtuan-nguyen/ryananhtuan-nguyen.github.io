@@ -1,34 +1,307 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <link href="./styles/main.css" rel="stylesheet" type="text/css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comforter&display=swap" rel="stylesheet">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script
+      src="https://kit.fontawesome.com/451b4a7e98.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Welcome to my blog</title>
+
+    <!-- Css -->
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+
   <body>
-    <div style="align-self: center;">
-      <h1>Hello world</h1>
-      <p> 
-          This is the beginning of my website home page. <span>It will eventually contain a list of links to all my blogs.</span>
-        </p>
-    </div>
-    
-    <div id="box-container">
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <div
+            class="navbar-toggle collapsed"
+            data-toggle="collapse"
+            data-target="#main-menu"
+          >
+            <span class="bar1"></span>
+            <span class="bar2"></span>
+            <span class="bar3"></span>
+          </div>
+          <a class="navbar-brand top" href="#">
+            <img src="img/logo.png" alt="" />
+          </a>
+        </div>
 
-      <div><a href="./blog/te-houtaewa-template.html" class="text-yellow">Te houtaewa</a></div>
-      <div><a href="./blog/html-css.html" class="text-yellow" style="text-align: left;">My first topic: What is the difference between Margin, Border, and Padding?</a></div>
-      <div><a href="./blog/identity-values.html" class="text-yellow">My identity, values and strengths</a></div>
-      <div><a href="./blog/learning-plan.html" class="text-yellow">My learning plan</a></div>
-      <div><a href="./blog/emotional-intelligence.html" class="text-yellow">IQ vs EQ</a></div>
-      <div><a href="./blog/javascript-dom.html" class="text-yellow">JS Fundamental</a></div>
-      <div><a href="./blog/neuroplasticity.html" class="text-yellow">Neuroplasticity and growth mindset</a></div>
-      <div><a href="./blog/problem-solving.html" class="text-yellow">Technical Blog - Problem Solving</a></div>
-      <div><a href="./blog/foundations-reflection.html" class="text-yellow">Foundation's Reflections</a></div>
-    
-    </div>
+        <div class="collapse navbar-collapse" id="main-menu">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#about">About</a></li>
+            <li><a href="#press">Blogs</a></li>
+            <li><a href="#brand">Contact</a></li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container-fluid -->
+    </nav>
 
+    <!-- Intro -->
+    <section class="intro">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7">
+            <p>
+              This is the beginning of my journey. This page will eventually
+              contain the links to <i>all</i> of my blog pages.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Slider -->
+    <section class="slider">
+      <div class="container-fluid">
+        <div class="row no-gutter">
+          <div class="col-lg-12">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                  <img src="img/slide-1.jpg" alt="slide" />
+                </div>
+
+                <div class="item">
+                  <img src="img/slide-2.jpg" alt="slide" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+      <div class="container about">
+        <div class="row">
+          <div class="col-md-6 big-letter">
+            <p>
+              My name is Ryan Nguyen. I am on the first step into the tech
+              industry. I am studying html, css and javascript. Hopefully I will
+              be a pro soon.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="portfolio">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 thumbnail">
+            <div class="hovereffect">
+              <div class="col-md-12 photo-1"></div>
+              <a href="#mybox" data-toggle="modal" data-slide-to="0">
+                <div class="overlay">
+                  <h2>A cool photo</h2>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md-6 thumbnail">
+            <div class="hovereffect">
+              <div class="col-md-12 photo-2"></div>
+              <a href="#mybox" data-toggle="modal" data-slide-to="1">
+                <div class="overlay">
+                  <h2>Also a cool photo</h2>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 thumbnail">
+            <div class="hovereffect">
+              <div class="col-md-12 photo-3"></div>
+              <a href="#mybox" data-toggle="modal" data-slide-to="2">
+                <div class="overlay">
+                  <h2>Maybe a cooler photo</h2>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md-6 thumbnail">
+            <div class="hovereffect">
+              <div class="col-md-12 photo-4"></div>
+              <a href="#mybox" data-toggle="modal" data-slide-to="3">
+                <div class="overlay">
+                  <h2>A not so cool photo</h2>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- End Gallery -->
+
+    <div class="container">
+      <div class="modal fade and carousel slide" id="mybox">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button class="close" data-dismiss="modal" type="button">
+                ×
+              </button>
+
+              <div class="carousel-inner">
+                <div class="item active">
+                  <img src="img/1.jpg" alt="slide" />
+                </div>
+                <div class="item">
+                  <img src="img/2.jpg" alt="slide" />
+                </div>
+                <div class="item">
+                  <img src="img/3.jpg" alt="slide" />
+                </div>
+                <div class="item">
+                  <img src="img/4.jpg" alt="slide" />
+                </div>
+              </div>
+              <!-- /.carousel-inner -->
+
+              <a
+                class="left carousel-control"
+                href="#mybox"
+                role="button"
+                data-slide="prev"
+              >
+                <span class="glyphicon glyphicon-chevron-left"></span>
+              </a>
+              <a
+                class="right carousel-control"
+                href="#mybox"
+                role="button"
+                data-slide="next"
+              >
+                <span class="glyphicon glyphicon-chevron-right"></span>
+              </a>
+            </div>
+            <!-- /.modal-body -->
+          </div>
+          <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+      </div>
+      <!-- /.modal -->
+    </div>
+    <!-- /.container -->
+
+    <!-- Press -->
+    <section class="press" id="press">
+      <div class="container about">
+        <div class="row">
+          <div class="col-md-4">
+            <h3 style="font-weight: bolder; text-align: center">Blogs list</h3>
+          </div>
+          <div class="col-md-8">
+            <h4>
+              <a href="./blog/te-houtaewa-template.html" target="_blank"
+                >Te houtaewa</a
+              >
+            </h4>
+            <h4>
+              <a href="./blog/html-css.html" target="_blank"
+                >What is the difference between Margin, Border, and Padding?</a
+              >
+            </h4>
+            <h4>
+              <a href="./blog/identity-values.html" target="_blank"
+                >Identity Values</a
+              >
+            </h4>
+            <h4>
+              <a href="./blog/learning-plan.html" target="_blank"
+                >My learning plan</a
+              >
+            </h4>
+            <h4>
+              <a href="./blog/emotional-intelligence.html" target="_blank"
+                >EQ vs IQ</a
+              >
+            </h4>
+            <h4>
+              <a href="./blog/javascript-dom.html" target="_blank"
+                >JS Fundamental</a
+              >
+            </h4>
+
+            <h4>
+              <a href="./blog/neuroplasticity.html" target="_blank"
+                >Neuroplasticity and growth mindset</a
+              >
+            </h4>
+            <h4>
+              <a href="./blog/problem-solving.html" target="_blank"
+                >Problem Solving</a
+              >
+            </h4>
+            <h4>
+              <a href="./blog/foundations-reflection.html" target="_blank"
+                >Foundation Reflections</a
+              >
+            </h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Brand -->
+    <section id="brand">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <ul class="logo-list list-inline text-center">
+              <li>
+                <a href="https://github.com/ryananhtuan-nguyen" target="_blank"
+                  ><i
+                    href="https://github.com/ryananhtuan-nguyen"
+                    class="fa-brands fa-github fa-shake fa-2xl"
+                  ></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/devacademynz" target="_blank"
+                  ><i class="fa-brands fa-facebook fa-flip fa-2xl"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Copyright -->
+    <footer>
+      <div class="container">
+        <p class="text-center">© 2023 - Edited by Ryan Nguyen</p>
+      </div>
+    </footer>
+
+    <a href="#page-top" class="cd-top">Top</a>
+
+    <!-- script -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/modernizr.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
