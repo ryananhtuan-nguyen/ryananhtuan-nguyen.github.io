@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GoFundMe Page</title>
+  </head>
+  <body style="text-align: center; font-size: 50px">
+    <h1>Go fund me if you havent already!</h1>
+    <p>
+      I am raising funds for a great cause. Please consider donating to support
+      our mission.
+    </p>
+
+    <p id="toggleText">Your generosity can make a difference!</p>
+
+    <button onclick="toggleText()">Click Me</button>
+
+    <script>
+      function toggleText() {
+        let textElement = document.getElementById('toggleText')
+        if (
+          textElement.style.display === 'none' ||
+          textElement.style.display === ''
+        ) {
+          textElement.style.display = 'block'
+          textElement.innerText =
+            '$17.60 per person please. My account is 06-0158-0927332-00 \n Please put your name in the reference if its not your account name already. Thanks for using our serveice and I will see you next time.'
+        } else {
+          textElement.style.display = 'none'
+        }
+      }
+    </script>
+  </body>
+</html>
